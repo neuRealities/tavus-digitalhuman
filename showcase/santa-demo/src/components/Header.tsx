@@ -49,12 +49,12 @@ export const Header = memo(() => {
   return (
     <header className="flex w-full items-start justify-between">
       <img
-        src="/images/logo.svg"
-        alt="Tavus"
+        src="/images/neuRealities-Logo.svg"
+        alt="neuRealities"
         className="relative h-6 sm:h-10"
       />
       <div className="flex items-center gap-2 sm:gap-4">
-        <div className="flex h-10 items-center rounded-xl border border-secondary/50 bg-secondary/10 px-1 backdrop-blur-sm sm:h-14 sm:px-2.5 ">
+        <div className="flex h-10 items-center rounded-xl border border-secondary/50 bg-secondary/10 px-1 backdrop-blur-sm sm:h-14 sm:px-2.5 hidden">
           <div className="flex w-12 flex-col items-center border-r border-secondary/50">
             <span className="font-santa text-lg !leading-none sm:text-2xl">
               {timeLeft.days}

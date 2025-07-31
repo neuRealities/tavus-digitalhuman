@@ -9,7 +9,7 @@ export const DialogWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-2.5xl border-2 border-primary bg-wrapper shadow-wrapper-shadow backdrop-blur-sm",
+        "relative overflow-hidden rounded-2.5xl border-2 border-primary bg-wrapper backdrop-blur-sm",
         desktopClassName,
         tabletClassName,
         mobileClassName,
@@ -43,7 +43,7 @@ export const AnimatedWrapper = ({
         },
       }}
       className={cn(
-        "relative overflow-hidden rounded-2.5xl border-2 border-primary bg-wrapper shadow-wrapper-shadow backdrop-blur-sm",
+        "relative overflow-hidden rounded-2.5xl border-2 border-primary bg-wrapper backdrop-blur-sm",
         desktopClassName,
         tabletClassName,
         mobileClassName,

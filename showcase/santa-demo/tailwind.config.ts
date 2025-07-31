@@ -12,7 +12,7 @@ export default {
       backgroundImage: {
         dialog: "url('./images/modalBG.png')",
         "text-primary": "linear-gradient(91deg, #F083C8 -21.8%, #FFF 86.73%)",
-        "main-bg": "url('./images/santaBG.png')",
+        "main-bg": "url('./images/neuRealities-BG.jpg')",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -71,7 +71,7 @@ export default {
       boxShadow: {
         "wrapper-shadow":
           "0px 4px 40px 0px rgba(242, 48, 170, 0.50) inset, 0px 4px 60px 0px rgba(255, 255, 255, 0.40), 0px 4px 80px 0px rgba(242, 48, 170, 0.50), 0px 60px 100px 0px rgba(12, 14, 18, 0.80)",
-        "button-shadow": "0px 12px 18px -3px rgba(246, 49, 129, 0.50)",
+        "button-shadow": "0px 12px 18px -3px rgba(49, 49, 49, 0.50)",
         "footer-btn": "0px 4px 30px 0px rgba(242, 51, 171, 0.67)",
       },
       backdropBlur: {

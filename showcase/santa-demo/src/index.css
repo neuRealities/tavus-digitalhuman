@@ -13,10 +13,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 4%;
 
-    --primary: 322 88.2% 56.9%;
+    --primary: 322 0% 50%;
     --primary-foreground: 322 85% 95%;
 
-    --secondary: 0 0% 100%;
+    --secondary: 0 0% 10%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
@@ -71,4 +71,8 @@ main {
 .grecaptcha-badge {
   width: 0 !important;
   height: 0 !important;
+}
+
+.hidden {
+  display: none;
 }
