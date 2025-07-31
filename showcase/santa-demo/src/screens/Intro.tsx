@@ -43,18 +43,6 @@ export const Intro: React.FC = () => {
               className="w-64 bg-white text-black"
             />
 
-            <p className="text-sm text-white">
-              Don't have a token?{" "}
-              <a
-                href="https://platform.tavus.io/api-keys"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-primary"
-              >
-                Sign up for a Tavus API Key
-              </a>
-            </p>
-
           </div>
           <AudioButton
             onClick={handleClick}
