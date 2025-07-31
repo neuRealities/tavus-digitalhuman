@@ -26,9 +26,19 @@ export const WelcomeScreen = ({ onStart, loading }: { onStart: (key: string) => 
 
   return (
     <div className={styles.container}>
+      
+      <div>
+        <img
+          src="/images/neuRealities-Logo.svg"
+          alt="neuRealities"
+          className="relative logo"
+        />
+      </div>
+
       <h1 className={styles.title}>
-        Welcome to Tavus Conversational Video Interface
+        Welcome to neuRealities Digital Human
       </h1>
+
       <form className={styles.form} >
         <input
           type='text'

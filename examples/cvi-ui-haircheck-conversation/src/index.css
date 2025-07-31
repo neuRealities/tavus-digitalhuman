@@ -90,3 +90,7 @@ main {
   margin: 0 auto;
   height: 100%;
 }
+
+.logo {
+  height: 8rem;
+}
