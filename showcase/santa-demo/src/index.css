@@ -76,3 +76,7 @@ main {
 .hidden {
   display: none;
 }
+
+.logo {
+  height: 4rem;
+}

@@ -51,7 +51,7 @@ export const Header = memo(() => {
       <img
         src="/images/neuRealities-Logo.svg"
         alt="neuRealities"
-        className="relative h-6 sm:h-10"
+        className="relative h-6 logo"
       />
       <div className="flex items-center gap-2 sm:gap-4">
         <div className="flex h-10 items-center rounded-xl border border-secondary/50 bg-secondary/10 px-1 backdrop-blur-sm sm:h-14 sm:px-2.5 hidden">
