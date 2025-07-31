@@ -2,6 +2,15 @@ import React, { useEffect, useState } from 'react';
 
 import styles from './welcome.module.css';
 
+const tavus_API_FROM_ENV = import.meta.env.VITE_APP_TAVUS_API_KEY;
+
+function API_Message({api_key}) {
+  if (api_key) {
+    return <p>API Key set</p>;
+  }
+  return <p>You can set an API key at <pre>.evv.local</pre>{api_key}</p>;
+}
+
 export const WelcomeScreen = ({ onStart, loading }: { onStart: (key: string) => void, loading: boolean }) => {
   const [apiKey, setApiKey] = useState('');
   // On initial mount, get token from localStorage if present
@@ -40,11 +49,13 @@ export const WelcomeScreen = ({ onStart, loading }: { onStart: (key: string) => 
       </h1>
 
       <form className={styles.form} >
+        <API_Message api_key={tavus_API_FROM_ENV} />
         <input
           type='text'
           className={styles.input}
           placeholder='Enter your API key'
           onChange={handleInputChange}
+          defaultValue={tavus_API_FROM_ENV}
           value={apiKey}
         />
         <button type='submit' className={styles.button} onClick={handleStart} disabled={!apiKey || loading}>
