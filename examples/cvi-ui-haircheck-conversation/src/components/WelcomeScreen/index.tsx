@@ -8,7 +8,7 @@ function API_Message({api_key}) {
   if (api_key) {
     return <p>API Key set</p>;
   }
-  return <p>You can set an API key at <pre>.evv.local</pre>{api_key}</p>;
+  return <p>You can set an API key at <pre>.env.local</pre>{api_key}</p>;
 }
 
 export const WelcomeScreen = ({ onStart, loading }: { onStart: (key: string) => void, loading: boolean }) => {
@@ -18,6 +18,8 @@ export const WelcomeScreen = ({ onStart, loading }: { onStart: (key: string) => 
     const token = localStorage.getItem('token');
     if (token) {
       setApiKey(token);
+    } else {
+      setApiKey(tavus_API_FROM_ENV);
     }
   }, []);
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -50,6 +52,7 @@ export const WelcomeScreen = ({ onStart, loading }: { onStart: (key: string) => 
 
       <form className={styles.form} >
         <API_Message api_key={tavus_API_FROM_ENV} />
+        
         <input
           type='text'
           className={styles.input}

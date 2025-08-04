@@ -9,6 +9,15 @@ This repository is packed with resources that demonstrate how you can build imme
 - 🤖 Build authentic digital twin experiences
 - 💡 Create advanced use cases for conversational video interfaces
 
+
+<!-- neuREalities Additions -->
+![Alt text](examples/cvi-ui-haircheck-conversation/public/images/neuRealities-Logo.svg "neuRealities")
+
+- [CVI UI Haircheck and Conversation](./examples/cvi-ui-haircheck-conversation) has been updated to include text, image, and favicon branding.
+- Next step: Use [persona layering documentation](https://docs.tavus.io/sections/conversational-video-interface/persona/llm) for adding custom LLM to response. 
+- [Tavus Santa Demo](./showcase/santa-demo) UI has been modified to include some neuREalities branding and reduce festivities load theme. 
+
+
 ## 💻 Examples
 
 - [CVI Quickstart React](./examples/cvi-quickstart-react)

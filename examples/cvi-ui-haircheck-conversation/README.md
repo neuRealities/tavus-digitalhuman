@@ -29,6 +29,26 @@ npx @tavus/cvi-ui@latest add conversation-01 hair-check-01
 
 ---
 
+<!-- neuREalities Additions -->
+![Alt text](public/images/neuRealities-Logo.svg "neuRealities")
+
+
+Add an `.env.local` file in this directory. 
+Contents: 
+```
+VITE_APP_TAVUS_API_KEY=<Your Tavus API key>
+```
+
+This will pre-populate the API key input field. You can still copy/paste normally.
+
+Start the web server with:
+
+```bash
+npm run dev
+```
+
+---
+
 ## 2. Wrap Your App with `<CVIProvider>` 🏗️
 
 In **`main.tsx`** (or **`index.tsx`**):
